@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Flourish Embed</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
+    body, html {
+      margin: 0; padding: 0; height: 100%;
     }
-    iframe {
+    .flourish-embed {
       width: 100%;
-      height: 100%;
-      border: none;
+      height: 600px; /* adjust as needed */
     }
   </style>
 </head>
 <body>
-  <iframe 
-    src="https://flo.uri.sh/visualisation/18484230/embed" 
-    title="Interactive or visual content"
-    class="flourish-embed-iframe" 
-    sandbox="allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation">
-  </iframe>
+  <div class="flourish-embed flourish-cards" data-src="visualisation/18484230"></div>
+  
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
 </body>
 </html>
